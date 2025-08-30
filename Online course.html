@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессия Веб-разработчик - Онлайн-курс</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Шапка */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #4a69bd);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        /* Основное предложение */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%234a69bd" width="100" height="100"/><path fill="%232c3e50" d="M0 0L100 100" stroke-width="0"/></svg>');
+            background-size: cover;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Секция преимуществ */
+        .benefits {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .benefits h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-card h3 {
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        
+        .icon {
+            font-size: 3rem;
+            color: #4a69bd;
+        }
+        
+        /* Таймер */
+        .timer {
+            background: linear-gradient(135deg, #2c3e50, #4a69bd);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .timer h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .countdown-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 100px;
+        }
+        
+        .countdown-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        
+        .countdown-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        
+        /* Кнопка записи */
+        .cta {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background 0.3s, transform 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .cta-button:hover {
+            background: #c0392b;
+            transform: scale(1.05);
+        }
+        
+        /* Футер */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .countdown {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <h1>Профессия Веб-разработчик</h1>
+        </div>
+    </header>
+    
+    <!-- Основное предложение -->
+    <section class="hero">
+        <div class="container">
+            <h1>Стань востребованным веб-разработчиком за 6 месяцев</h1>
+            <p>Освойте полный стек технологий, создайте портфолио из 5 реальных проектов и получите помощь в трудоустройстве</p>
+        </div>
+    </section>
+    
+    <!-- Секция "Что вы получите" -->
+    <section class="benefits">
+        <div class="container">
+            <h2>Что вы получите после курса</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon">💼</div>
+                    <h3>Портфолио проектов</h3>
+                    <p>5 полноценных работ, которые покажут ваши навыки работодателям</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">👨‍💻</div>
+                    <h3>Навыки разработки</h3>
+                    <p>HTML, CSS, JavaScript, React, Node.js и другие современные технологии</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🤝</div>
+                    <h3>Поддержка</h3>
+                    <p>Помощь преподавателей и сообщества на всех этапах обучения</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🎯</div>
+                    <h3>Трудоустройство</h3>
+                    <p>Подготовка к собеседованиям и помощь в составлении резюме</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Таймер обратного отсчета -->
+    <section class="timer">
+        <div class="container">
+            <h2>До начала осталось:</h2>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Дней</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Часов</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Минут</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Секунд</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Кнопка записи -->
+    <section class="cta">
+        <div class="container">
+            <button class="cta-button" id="signup-button">Записаться на курс</button>
+        </div>
+    </section>
+    
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p>© 2023 Онлайн-курс "Профессия Веб-разработчик". Все права защищены.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Таймер обратного отсчета
+        function updateCountdown() {
+            // Устанавливаем дату окончания (3 дня от текущего момента)
+            const countdownDate = new Date();
+            countdownDate.setDate(countdownDate.getDate() + 3);
+            
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById("days").innerText = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+            
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("days").innerText = "00";
+                document.getElementById("hours").innerText = "00";
+                document.getElementById("minutes").innerText = "00";
+                document.getElementById("seconds").innerText = "00";
+            }
+        }
+        
+        // Обновляем таймер каждую секунду
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown(); // Инициализируем сразу
+        
+        // Обработчик для кнопки записи
+        document.getElementById('signup-button').addEventListener('click', function() {
+            alert('Спасибо за интерес к нашему курсу! Форма записи скоро откроется.');
+        });
+    </script>
+</body>
+</html>
